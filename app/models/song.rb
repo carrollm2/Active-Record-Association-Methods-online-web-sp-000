@@ -19,11 +19,11 @@ class Song < ActiveRecord::Base
       end
     end
 
-    if drake_instance = nil
-      Artist.create(name: "Drake")
-    end
-
-    Song.create(artist: drake_instance )
+    # if drake_instance = nil
+    #   Artist.create(name: "Drake")
+    # end
+    #
+    # Song.create(artist: drake_instance )
 
   end
 end
