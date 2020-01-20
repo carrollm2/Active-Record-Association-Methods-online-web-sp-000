@@ -16,6 +16,7 @@ class Song < ActiveRecord::Base
     Artist.all.each do |artist|
       if artist[:name] == "Drake"
         drake_instance = artist
+      end
     end
 
     if drake_instance = nil
