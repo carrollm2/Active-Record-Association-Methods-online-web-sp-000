@@ -23,6 +23,8 @@ class Song < ActiveRecord::Base
       drake_instance = Artist.create(name: "Drake")
     end
 
+    binding.pry
+
     Song.create(artist: drake_instance )
 
   end
