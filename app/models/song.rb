@@ -11,12 +11,13 @@ class Song < ActiveRecord::Base
     # when this method is called it should assign the song's artist to Drake
     # Drake doesn't exist in the database as an artist yet, so you'll have to create a record
     # Hint: you won't want to create an artist record every time this method is called, only if an Drake is *not found*
-    binding.pry
     artist_names = []
-    self.artist.all.each do |artist|
+    self.all.each do |artist|
       artist_names << artist[:name]
     end
     artist_names
+
+    binding.pry
 
     if artist_names.include?("Drake")
     else
