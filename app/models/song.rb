@@ -25,5 +25,7 @@ class Song < ActiveRecord::Base
 
     Song.create(artist: drake_instance)
 
+    binding.pry
+
   end
 end
