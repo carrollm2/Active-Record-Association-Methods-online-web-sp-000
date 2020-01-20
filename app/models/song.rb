@@ -23,7 +23,5 @@ class Song < ActiveRecord::Base
       Artist.create(name: "Drake")
     end
 
-    self.artist = "Drake"
-
   end
 end
