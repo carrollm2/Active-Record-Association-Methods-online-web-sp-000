@@ -13,7 +13,7 @@ class Song < ActiveRecord::Base
     # Hint: you won't want to create an artist record every time this method is called, only if an Drake is *not found*
     artist_names = []
 
-    Song.all.each do |artist|
+    Genre.all.each do |artist|
       artist_names << artist[:name]
     end
     artist_names
