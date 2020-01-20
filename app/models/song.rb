@@ -22,6 +22,8 @@ class Song < ActiveRecord::Base
     else
       Artist.create(name: "Drake")
     end
+    binding.pry
+    self
 
   end
 end
