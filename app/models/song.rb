@@ -20,10 +20,8 @@ class Song < ActiveRecord::Base
     end
 
     if drake_instance == nil
-      Artist.create(name: "Drake")
+      drake_instance = Artist.create(name: "Drake")
     end
-
-    binding.pry
 
     Song.create(artist: drake_instance )
 
