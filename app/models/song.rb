@@ -15,7 +15,7 @@ class Song < ActiveRecord::Base
 
     drake_instance = Artist.create(name: "Drake")
 
-    Song.create(artist: drake_instance)
+    self.artist = drake_instance
 
   end
 end
