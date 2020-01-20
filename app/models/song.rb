@@ -23,7 +23,7 @@ class Song < ActiveRecord::Base
       drake_instance = Artist.create(name: "Drake")
     end
 
-    Song.create(artist_id: drake_instance)
+    Song.create(artist_id: drake_instance[:id])
 
     binding.pry
 
